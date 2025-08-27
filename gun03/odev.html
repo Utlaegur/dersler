@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>odev</title>
+</head>
+
+<body>
+    <h1>Benim Seyahat <em>&amp;</em> Hobi Sitem</h1>
+    <h3>HTML Odev Calismasi</h3>
+    <h2>Baslik Denemeleri</h2>
+    <h2>En Buyuk Baslik</h2>
+    <h2>Ikinci Baslik</h2>
+    <h3>Ucuncu Baslik</h3>
+
+    Bu paragraf <strong>onemli</strong> ve <em>vurgulu</em> bir metin icerir.
+    <hr>
+
+    <img src="dombili.webp" alt="dombili" height="300">
+
+    <hr>
+
+    <a href="https://www.enuygun.com">Ucus Ara</a>
+
+    <hr>
+
+    <h2>Listeler</h2>
+    <h3>Gezilecek yerler</h3>
+    <ul>
+        <li>Kapadokya</li>
+        <li>Pamukkale</li>
+        <li>Nemrut Dagi</li>
+    </ul>
+
+    <h3>Hobiler</h3>
+    <ol>
+        <li>Fotografcilik</li>
+        <li>Satranc</li>
+        <li>Yuzme</li>
+    </ol>
+    <hr>
+
+    <h2>Tablo Ornegi</h2>
+
+    <table>
+
+        <tr>
+            <th>Plaka</th>
+            <th>Sehir</th>
+            <th>Meshur</th>
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Adana</td>
+            <td>Kebap, Gunes</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>Konya</td>
+            <td>Tayyip</td>
+        </tr>
+        <tr>
+            <td>78</td>
+            <td>Karabuk</td>
+            <td>Karabuk Universitesi</td>
+        </tr>
+
+    </table>
+
+    <hr>
+    <h2>IFrame</h2>
+
+    <iframe src="https://kiratlikoyu.org.tr/" frameborder="0"></iframe>
+
+    <hr>
+
+    <h2>Entity ve Metin Bicimlendirme</h2>
+
+    <p>&lt;div&gt; etiketi sayfada blok olusturur.</p>
+    <p>Bosluk &nbsp;&nbsp;&nbsp;&nbsp; eklenebilir.</p>
+    <p>Kimyasal formul: H<sub>2</sub>O</p>
+    <p>Alan: 150m<sup>2</sup></p>
+    <p><del>Eski Sehir</del> yerine <span style="color: green">Yeni Sehir</span></p>
+
+    <pre>
+Bir gun bir yolculuk basladi
+Daglari asti, denizleri gecti
+        </pre>
+    <hr>
+    <h2>Form Ornegi - Uye Ol</h2>
+
+    <form method="post" action="odev.html">
+        <div>
+            <label for="formAd">Adiniz</label>
+            <input id="formAd" type="text" name="ad" required>
+        </div>
+
+        <div>
+            <label for="formMail">E-posta</label>
+            <input id="formMail" type="email" name="mail" placeholder="mail@example.com" required>
+        </div>
+
+        <div>
+
+            <label for="sehir">Sehir</label>
+            <select name="sehir" id="sehir" required>
+                <option value="">Seciniz</option>
+                <option value="34">Istanbul</option>
+                <option value="6">Ankara</option>
+                <option value="35">Izmir</option>
+            </select>
+
+        </div>
+
+        <div>
+
+            <label>
+                <input type="radio" name="cinsiyet" value="erkek">
+                Erkek
+            </label>
+
+            <label>
+                <input type="radio" name="cinsiyet" value="kadin">
+                Kadin
+            </label>
+
+        </div>
+
+        <div>
+
+            <label>
+                <input type="checkbox" name="onay" value="verildi" required> Kurallari okudum ve kabul ediyorum
+            </label>
+
+        </div>
+
+        <div>
+
+            <button type="submit">Kaydol</button>
+
+        </div>
+
+    </form>
+
+    <footer>
+        &copy; 2025 Seyahat &amp; Hobi Sitesi - Tum Haklari Saklidir
+    </footer>
+
+</body>
+
+</html>
