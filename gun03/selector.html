@@ -98,6 +98,14 @@
             border: 3px solid red;
         }
 
+        .deniz::after {
+            content: "🌊";
+        }
+
+        ol>li:not(.deniz)::before {
+            content: "⛰️ ";
+        }
+
     </style>
 
 </head>
@@ -112,7 +120,7 @@
     </form>
 
     <div id="pinokyo">
-        a
+        
     </div>
 
     </div>
@@ -121,12 +129,12 @@
     <h2>En Kalabalik Sehirler</h2>
 
     <ol>
-        <li>Istanbul</li>
+        <li class="deniz">Istanbul</li>
         <li>Ankara</li>
-        <li>Izmir</li>        
-        <li id="memleket">Bursa</li>
-        <li>Antalya</li>
-        <li title="Adanaliyik">Adana</li>
+        <li class="deniz">Izmir</li>        
+        <li class="deniz" id="memleket">Bursa</li>
+        <li class="deniz">Antalya</li>
+        <li class="deniz" title="Adanaliyik">Adana</li>
         <li>Konya</li>
     </ol>
 
