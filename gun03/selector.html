@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+        font-family: "Limelight", sans-serif;
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        .dikkat {
+            background-color: yellow;
+        }
+
+        #memleket {
+            color: green;
+        }
+
+        .tavsiye {
+            font-style: italic;
+        }
+
+        ol>li:first-child {
+            font-weight: bolder;
+        }
+
+        ul>li:nth-child(2n) {
+            background-color: aquamarine;
+        }
+
+        ul>li:nth-child(2n-1) {
+            background-color: blanchedalmond;
+        }
+
+        div p {
+            text-indent: 25px;
+        }
+
+        div.buda {
+            border: 3px solid aquamarine;
+        }
+
+        div>p:nth-child(2) {
+            background-color: lavender;
+        }
+
+        div>p:nth-of-type(2) {
+            background-color: silver;
+        }
+
+        ol>li:hover {
+            background-color: papayawhip;
+
+        }
+        
+        p::first-letter {
+            font-size: 150%;
+            font-weight: bold;
+        }
+
+        #pinokyo {
+            height: 30px;
+            width: 120px;
+            background-color: burlywood;
+            transition: all 1s;
+            border-radius: 1px 20px 20px 1px ;
+        }
+
+        #pinokyo:hover {
+            width: 100%;
+            background-color: sienna;
+        }
+
+        ol, ul {
+            margin-left: 50px;
+            border-left: 5px solid;
+        }
+
+        li[title] {
+           color: blueviolet; 
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="password"] {
+            border: 3px solid red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <form>
+        <label for="ad">Adiniz</label>
+        <input type="text" name="ad" id="ad">
+        <label for="parola">Sifre</label>
+        <input type="password" name="parola" id="parola">
+        <label><input type="checkbox">Beni hatirla</label>
+    </form>
+
+    <div id="pinokyo">
+        a
+    </div>
+
+    </div>
+
+    <h1>Turkiye</h1>
+    <h2>En Kalabalik Sehirler</h2>
+
+    <ol>
+        <li>Istanbul</li>
+        <li>Ankara</li>
+        <li>Izmir</li>        
+        <li id="memleket">Bursa</li>
+        <li>Antalya</li>
+        <li title="Adanaliyik">Adana</li>
+        <li>Konya</li>
+    </ol>
+
+    <h2>Lorem ipsum dolor sit.</h2>
+    <ul>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+        <li>Eveniet aperiam quibusdam fugit ratione, accusantium nesciunt.</li>
+        <li>Cupiditate, laudantium deleniti. Quam molestias ipsa ratione!</li>
+        <li>Velit, eos. Laboriosam, odit! Recusandae, commodi sapiente!</li>
+        <li>Dignissimos ipsam tenetur cum nobis eveniet perspiciatis!</li>
+        <li>Suscipit assumenda, obcaecati neque explicabo voluptate culpa.</li>
+        <li>Eius vitae velit voluptatibus, eaque esse nam!</li>
+    </ul>
+
+    <h2>Lorem, ipsum.</h2>
+    <p>Lorem ipsum dolor sit amet <span class="dikkat">consectetur adipisicing</span> elit. <span class="dikkat tavsiye">Commodi iusto</span> laudantium <span class="dikkat">maxime officiis laboriosam</span> porro odio ipsum fugit ea, est dolorum vel veritatis ut deleniti doloribus <span>recusandae tenetur</span> hic? Aliquid.</p>
+    <hr>
+    <div class="buda">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit commodi laboriosam, molestiae possimus est, quas accusantium eaque voluptatum, repellat blanditiis dolorem debitis autem exercitationem nesciunt distinctio ab ipsum asperiores aspernatur.</p>
+        <p>Consectetur aliquam vero nam id? Libero omnis quo, iusto in inventore ullam! Blanditiis praesentium possimus, voluptate, aliquam eveniet nulla magnam inventore quam ex veniam perferendis incidunt aut exercitationem velit illo.</p>
+        <p>Animi delectus beatae est harum quis reiciendis officia molestiae ipsum reprehenderit incidunt, sed rem quidem nesciunt et cupiditate, porro laudantium ab dolorum quae distinctio? Accusantium temporibus nobis exercitationem nulla atque!</p>
+
+    </div>
+</body>
+</html>
